@@ -1,0 +1,75 @@
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'pablo@mail.com' AND password LIKE '12345'
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 1 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 16 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 38 AND es_correcta = 1
+[2023-10-23][INFO]Ejecutando query: INSERT INTO useranswers(userId, respuestaId, estado) VALUES (15,38,1)
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 38 AND es_correcta = 1
+[2023-10-23][INFO]Ejecutando query: INSERT INTO useranswers(userId, respuestaId, estado) VALUES (15,38,1)
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 13 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 32 AND es_correcta = 1
+[2023-10-23][INFO]Ejecutando query: INSERT INTO useranswers(userId, respuestaId, estado) VALUES (15,32,1)
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 9 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 25 AND es_correcta = 1
+[2023-10-23][INFO]Ejecutando query: INSERT INTO useranswers(userId, respuestaId, estado) VALUES (15,25,)
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 25 AND es_correcta = 1
+[2023-10-23][INFO]Ejecutando query: INSERT INTO useranswers(userId, respuestaId, estado) VALUES (15,25,0)
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 21 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'usuario@mail.com' AND password LIKE '12345'
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 5 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 11 AND es_correcta = 1
+[2023-10-23][INFO]Ejecutando query: INSERT INTO useranswers(userId, respuestaId, estado) VALUES (1,11,0)
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 8 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 22 AND es_correcta = 1
+[2023-10-23][INFO]Ejecutando query: INSERT INTO useranswers(userId, respuestaId, estado) VALUES (1,22,1)
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 23 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 52 AND es_correcta = 1
+[2023-10-23][INFO]Ejecutando query: INSERT INTO useranswers(userId, respuestaId, estado) VALUES (1,52,1)
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 23 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 53 AND es_correcta = 1
+[2023-10-23][INFO]Ejecutando query: INSERT INTO useranswers(userId, respuestaId, estado) VALUES (1,53,0)
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 15 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 13 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 9 ORDER BY RAND();
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'pablo@mail.com' AND password LIKE '12345'
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-10-23][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.nombreusuario = pablo 
+[2023-10-23][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.nombreusuario = 'pablo' 
+[2023-10-23][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-10-23][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-10-23][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.nombreusuario = 'usuario' 

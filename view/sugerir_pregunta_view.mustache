@@ -1,0 +1,36 @@
+<article class="container px-2 mt-5 py-3 mx-auto col-md-8" style="background-image: url(https://static.vecteezy.com/system/resources/previews/001/782/581/non_2x/dark-blue-gradient-blur-backdrop-vector.jpg); border-radius: 10px;">
+    <div class="container-lg text-center px-5">
+        <h4 class="text-light py-3 mb-3 fs-4">Edita la Pregunta</h4>
+        <p class="text-light">La respuesta correcta debe estar en la posición 1</p>
+        <form class="mt-4 col-md-15 mx-auto" method="post" enctype="multipart/form-data" action="/pregunta/crear">
+            <input required type="text" class="form-control" value="{{pregunta}}" name="pregunta" id="pregunta"
+                style="height: 80px; margin-bottom: 20px; border-radius: 10px; border: none; padding: 5px; margin: auto; margin-bottom: 20px;"
+                placeholder="Ingresar pregunta">
+
+            <!-- Respuestas -->
+            <input required type="text" class="form-control mb-2" name="respuesta[0]" placeholder="Ingresar respuesta">
+            <input required type="text" class="form-control mb-2" name="respuesta[1]" placeholder="Ingresar respuesta">
+            <input required type="text" class="form-control mb-2" name="respuesta[2]" placeholder="Ingresar respuesta">
+            <input required type="text" class="form-control mb-2" name="respuesta[3]" placeholder="Ingresar respuesta">
+
+            <!-- Categoría -->
+            <div class="mb-3">
+                <label for="categoria" class="form-label text-cyan">Categoría</label>
+                <select id="categoria" required class="form-select rounded-0 text-white" name="categoria">
+                    <option>--------Selecciona Categoría--------</option>
+                    {{#categorias}}
+                        <option class="text-white" value="{{id_categoria}}">{{descripcion}}</option>
+                    {{/categorias}}
+                </select>
+            </div>
+
+            <!-- Botones -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary px-5 py-2">CONFIRMAR</button>
+            </div>
+            <div class="text-center mt-3">
+                <a href="/" class="btn btn-danger rounded-0 text-white px-5 py-2 exit">VOLVER</a>
+            </div>
+        </form>
+    </div>
+</article>

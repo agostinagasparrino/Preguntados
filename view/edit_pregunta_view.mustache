@@ -1,0 +1,42 @@
+    <article class="container px-2 mt-5 py-3 mx- col-md-8">
+        <div class="container-lg text-center px-5">
+            <h4 class="text-special py-3 mb- fs-4">Edita la Pregunta</h4>
+            <p class="bg-white">La resuesta correcta debe estar en la posición 1</p>
+            {{#pregunta}}
+                <form class="mt-7 col-md-15 mx-auto" method="post" enctype="multipart/form-data"
+                      action="/editor/modificarPregunta&id_pregunta={{id_pregunta}}">
+                <input type="text" class="form-control" value="{{pregunta}}" name="pregunta" id="pregunta" categoria="{{id_categoria}}"
+                       style="height: 80px; margin-bottom: 20px; border-radius: 0px;border: none; padding: 5px; margin: auto;margin-bottom: 20px">
+            {{/pregunta}}
+            {{#respuestas}}
+                    <input type="text" class="form-control" name="respuesta[]" value="{{respuesta}}">
+            {{/respuestas}}
+            <br>
+            <div class="mb-1">
+                <label for="categoria" class="form-label text-black">Categoría</label>
+                <select id="categoria" class="form-select rounded-0" name="categoria">
+                    <option>--------Selecciona Categoría--------</option>
+                    {{#categorias}}
+                        <option value="{{id_categoria}}">{{descripcion}}</option>
+                    {{/categorias}}
+                </select>
+            </div>
+
+            <div class="text-center pt-5 pb-3">
+                <button type="submit" class="btn btn-primary px-5 py-2">CONFIRMAR</button>
+            </div>
+            <div class="text-center mt-1 pb-4">
+                <a href="/admin/" class="btn btn-danger rounded-0 text-white px-5 py-2 exit">VOLVER</a>
+            </div>
+            </form>
+        </div>
+    </article>
+    <br>
+
+<script>
+    var inputPregunta = document.getElementById('pregunta');
+    var categoriaValue = inputPregunta.getAttribute('categoria');
+    if (categoriaValue) {
+        document.getElementById('categoria').value = categoriaValue;
+    }
+</script>

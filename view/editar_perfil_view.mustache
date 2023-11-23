@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="../public/css/custom.css">
+<body class="register_body">
+    <main class="register_main pt-3 pb-5">
+        <div class="container container-custom my-5 pt-5">
+            <div class="d-flex justify-content-center"> 
+                <img src="https://media.baamboozle.com/uploads/images/40572/1657419882_406705_gif-url.gif" alt="icon" width="70" height="70" class="icono">
+                <h2>Editar Perfil</h2>
+            </div>
+            <form action="/usuario/editar" method="POST" enctype="multipart/form-data" >
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control form-control-custom" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control form-control-custom" id="apellido" name="apellido" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nacimiento">Año de Nacimiento</label>
+                        <input type="number" class="form-control form-control-custom" id="nacimiento" name="nacimiento" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="sexo">Sexo</label>
+                        <select class="form-control form-control-custom" id="sexo" name="sexo" required>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                            <option value="3">Prefiero no cargarlo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="pais">País</label>
+                        <input type="text" class="form-control form-control-custom" id="pais" name="pais" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" class="form-control form-control-custom" id="ciudad" name="ciudad" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control form-control-custom" id="email" name="email" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="username">Nombre de Usuario</label>
+                        <input type="text" class="form-control form-control-custom" id="username" name="username" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="foto">Foto</label>
+                        <input type="file" accept="image/*" class="form-control form-control-custom" id="foto" name="foto">
+                        <img id="foto_preview" style="height:300px;max-width:100%" >
+                    </div>
+                    <div id="map-container" style="height: 400px;" class="col-md-6"></div>
+                </div>
+            
+                <div class="text-center p-3">
+                    <button type="submit" class="btn btn-custom ">Editar</button>
+                    <a href="/usuario/perfil" class="btn btn-danger ">Cancelar</a>
+                </div>
+                        
+            </form>
+        </div>
+    </main>
+
+<script>
+    let map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map-container'), {
+        center: { lat: 0, lng: 0 },
+        zoom: 2
+      });
+
+      map.addListener('click', function(event) {
+        const latLng = event.latLng;
+
+        // Realizar una llamada a la API de geocodificación inversa
+        const geocoder = new google.maps.Geocoder();
+        geocoder.geocode({ location: latLng }, function(results, status) {
+          if (status === 'OK') {
+            if (results[0]) {
+              // Obtener el país y ciudad a partir de los resultados de la geocodificación
+              const country = results[0].address_components.find(component => component.types.includes('country'));
+              const city = results[0].address_components.find(component => component.types.includes('locality'));
+
+              // Llenar los campos de país y ciudad con la información obtenida
+              document.getElementById('pais').value = country ? country.long_name : '';
+              document.getElementById('ciudad').value = city ? city.long_name : '';
+            } else {
+              window.alert('No se encontraron resultados.');
+            }
+          } else {
+            window.alert('La geocodificación inversa falló debido a: ' + status);
+          }
+        });
+      });
+    }
+</script>
+
+  <!-- Cargar la API de Google Maps con tu clave de API y llamar a initMap() -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO-cs-AzjPpidbANQOQr9bWXK1mw0I9Ww&callback=initMap"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  const apiUrl = 'http://127.0.0.1/usuario/get_user_data';
+  axios.get(apiUrl)
+    .then(response => {
+        const usuario = response.data;
+        document.getElementById('nombre').value = usuario.nombre;
+        document.getElementById('apellido').value = usuario.apellido;
+        document.getElementById('nacimiento').value = usuario.anioDeNacimiento;
+        document.getElementById('sexo').value = usuario.sexo;
+        document.getElementById('pais').value = usuario.pais;
+        document.getElementById('ciudad').value = usuario.ciudad;
+        document.getElementById('email').value = usuario.email;
+        document.getElementById('username').value = usuario.nombreUsuario;
+        document.getElementById('foto_preview').src = "../public/uploads/"+usuario.foto;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+
+
+const fotoInput = document.getElementById('foto');
+const fotoPreview = document.getElementById('foto_preview');
+
+fotoInput.addEventListener('change', function(event) {
+    const file = event.target.files[0]; // Obtener el archivo seleccionado
+
+    // Verificar si se seleccionó un archivo
+    if (file) {
+        const reader = new FileReader(); // Crear un lector de archivos
+
+        // Acción cuando la lectura del archivo esté completa
+        reader.onload = function(e) {
+            fotoPreview.src = e.target.result; // Establecer la vista previa con la URL del archivo seleccionado
+        };
+
+        reader.readAsDataURL(file); // Leer el archivo como una URL
+    }
+});
+
+
+</script>

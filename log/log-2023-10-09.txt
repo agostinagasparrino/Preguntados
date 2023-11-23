@@ -1,0 +1,22 @@
+[2023-10-09][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-09][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-09][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( 'Maximiliano', 'chester9322@gmail.com' )
+[2023-10-09][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-09][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-09][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-09][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( 'Maximiliano Rabenko', 'chester9322@gmail.com' )
+[2023-10-09][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-09][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-09][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-09][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( 'Maximiliano', 'chester9322@gmail.com' )
+[2023-10-09][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( 'Maximiliano', 'armonica' )
+[2023-10-09][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( 'Maximiliano', 'armonica' )
+[2023-10-09][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( 'Maximiliano', 'armonica' )
+[2023-10-09][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( 'Maximiliano', 'armonica' )

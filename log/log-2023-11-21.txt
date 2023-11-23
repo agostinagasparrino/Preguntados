@@ -1,0 +1,1443 @@
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(e.fecha) as ANIO, MONTH(e.fecha) as MES, COUNT(DISTINCT p.id) as cantidadPartidas 
+                        FROM partidas p
+                        INNER JOIN estadistica e ON p.id = e.id_partida
+                        WHERE e.fecha BETWEEN '2020-11-22' AND '2023-11-11' 
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'admin@mail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-21][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'admin@mail.com' AND password LIKE '123' AND verificado = 1
+[2023-11-21][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'admin@mail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '1970-01-01' AND '1970-01-01'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'admin@mail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-21][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'admin@mail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '1970-01-01' AND '1970-01-01'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-10-11' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-10-11' AND '2023-11-20'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, DAY(u.fecha_creacion) as DIA, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-10-11' AND '2023-11-20'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(e.fecha) as ANIO, COUNT(DISTINCT p.id) as cantidadPartidas 
+                        FROM partidas p
+                        INNER JOIN estadistica e ON p.id = e.id_partida
+                        WHERE e.fecha BETWEEN '2020-11-10' AND '2023-11-10' 
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-10'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-10'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, DAY(u.fecha_creacion) as DIA, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(e.fecha) as ANIO, MONTH(e.fecha) as MES, DAY(e.fecha) as DIA, COUNT(DISTINCT p.id) as cantidadPartidas 
+                        FROM partidas p
+                        INNER JOIN estadistica e ON p.id = e.id_partida
+                        WHERE e.fecha BETWEEN '2020-11-10' AND '2023-11-20' 
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(e.fecha) as ANIO, COUNT(DISTINCT p.id) as cantidadPartidas 
+                        FROM partidas p
+                        INNER JOIN estadistica e ON p.id = e.id_partida
+                        WHERE e.fecha BETWEEN '2020-11-10' AND '2023-11-20' 
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(e.fecha) as ANIO, MONTH(e.fecha) as MES, COUNT(DISTINCT p.id) as cantidadPartidas 
+                        FROM partidas p
+                        INNER JOIN estadistica e ON p.id = e.id_partida
+                        WHERE e.fecha BETWEEN '2020-11-10' AND '2023-11-20' 
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(e.fecha) as ANIO, MONTH(e.fecha) as MES, DAY(e.fecha) as DIA, COUNT(DISTINCT p.id) as cantidadPartidas 
+                        FROM partidas p
+                        INNER JOIN estadistica e ON p.id = e.id_partida
+                        WHERE e.fecha BETWEEN '2020-11-10' AND '2023-11-20' 
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, DAY(u.fecha_creacion) as DIA, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '1970-01-01' AND '1970-01-01'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, COUNT(p.id_pregunta) as cantidadPreguntasSistema 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-02-10' AND '2023-11-10'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, COUNT(p.id_pregunta) as cantidadPreguntasSistema 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-02-10' AND '2023-11-10'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, MONTH(p.fecha_creacion) as MES, DAY(p.fecha_creacion) as DIA, COUNT(p.id_pregunta) as cantidadPreguntasSistema 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-02-10' AND '2023-11-10'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, MONTH(p.fecha_creacion) as MES, COUNT(p.id_pregunta) as cantidadPreguntasSistema 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-02-10' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, MONTH(p.fecha_creacion) as MES, COUNT(p.id_pregunta) as cantidadPreguntasUsuario 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-02-10' AND '2023-11-10'
+                        AND p.estado = 'INACTIVA'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, COUNT(p.id_pregunta) as cantidadPreguntasUsuario 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-02-10' AND '2023-11-10'
+                        AND p.estado = 'INACTIVA'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, MONTH(p.fecha_creacion) as MES, COUNT(p.id_pregunta) as cantidadPreguntasUsuario 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-02-10' AND '2023-11-10'
+                        AND p.estado = 'INACTIVA'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, MONTH(p.fecha_creacion) as MES, COUNT(p.id_pregunta) as cantidadPreguntasSistema 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-02-10' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-10'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, DAY(u.fecha_creacion) as DIA, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-10'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, DAY(u.fecha_creacion) as DIA, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-10'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, DAY(u.fecha_creacion) as DIA, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-10'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '1970-01-01' AND '1970-01-01'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-01' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, MONTH(p.fecha_creacion) as MES, COUNT(p.id_pregunta) as cantidadPreguntasUsuario 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-01-01' AND '2023-11-20'
+                        AND p.estado = 'INACTIVA'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, MONTH(p.fecha_creacion) as MES, COUNT(p.id_pregunta) as cantidadPreguntasSistema 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-01-01' AND '2023-11-20'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, MONTH(p.fecha_creacion) as MES, DAY(p.fecha_creacion) as DIA, COUNT(p.id_pregunta) as cantidadPreguntasSistema 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-01-01' AND '2023-11-20'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, COUNT(p.id_pregunta) as cantidadPreguntasSistema 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2020-01-01' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(e.fecha) as ANIO, COUNT(DISTINCT p.id) as cantidadPartidas 
+                        FROM partidas p
+                        INNER JOIN estadistica e ON p.id = e.id_partida
+                        WHERE e.fecha BETWEEN '2023-11-10' AND '2023-11-20' 
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, COUNT(p.id_pregunta) as cantidadPreguntasSistema 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, COUNT(p.id_pregunta) as cantidadPreguntasUsuario 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        AND p.estado = 'INACTIVA'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(e.fecha) as ANIO, COUNT(e.id_estadistica) as cantidadRespuestasCorrectas
+                        FROM estadistica e
+                        WHERE e.respuesta = 1
+                        AND e.fecha BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(e.fecha) as ANIO, MONTH(e.fecha) as MES, DAY(e.fecha) as DIA, COUNT(e.id_estadistica) as cantidadRespuestasCorrectas
+                        FROM estadistica e
+                        WHERE e.respuesta = 1
+                        AND e.fecha BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '1970-01-01' AND '1970-01-01'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '1970-01-01' AND '1970-01-01'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, DAY(u.fecha_creacion) as DIA, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, MONTH(p.fecha_creacion) as MES, COUNT(p.id_pregunta) as cantidadPreguntasUsuario 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        AND p.estado = 'INACTIVA'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(e.fecha) as ANIO, MONTH(e.fecha) as MES, COUNT(e.id_estadistica) as cantidadRespuestasCorrectas
+                        FROM estadistica e
+                        WHERE e.respuesta = 1
+                        AND e.fecha BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, DAY(u.fecha_creacion) as DIA, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(p.fecha_creacion) as ANIO, MONTH(p.fecha_creacion) as MES, COUNT(p.id_pregunta) as cantidadPreguntasSistema 
+                        FROM preguntas p
+                        WHERE p.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT pais, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT pais, YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais, ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT pais, YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais, ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT pais, YEAR(fecha_creacion) as ANIO, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais, ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT pais, YEAR(fecha_creacion) as ANIO, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais, ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT pais, YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais, ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT pais, YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, DAY(fecha_creacion) as DIA, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais, ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT pais, YEAR(fecha_creacion) as ANIO, COUNT(id) as cantidadUsuariosPorPais
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY pais, ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT s.descripcion as genero, YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuariosPorGenero
+                        FROM usuarios u
+                        INNER JOIN sexo s ON u.sexo = s.id
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY genero, ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT s.descripcion as genero, YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuariosPorGenero
+                        FROM usuarios u
+                        INNER JOIN sexo s ON u.sexo = s.id
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY genero, ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT s.descripcion as genero, YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, DAY(u.fecha_creacion) as DIA, COUNT(u.id) as cantidadUsuariosPorGenero
+                        FROM usuarios u
+                        INNER JOIN sexo s ON u.sexo = s.id
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY genero, ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT s.descripcion as genero, YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuariosPorGenero
+                        FROM usuarios u
+                        INNER JOIN sexo s ON u.sexo = s.id
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY genero, ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - YEAR(anioDeNacimiento)) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - YEAR(anioDeNacimiento)) >= 18 AND (YEAR(NOW()) - YEAR(anioDeNacimiento)) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad, YEAR(fecha_creacion)
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - YEAR(anioDeNacimiento)) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - YEAR(anioDeNacimiento)) >= 18 AND (YEAR(NOW()) - YEAR(anioDeNacimiento)) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad, YEAR(fecha_creacion), MONTH(fecha_creacion), DAY(fecha_creacion)
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - YEAR(anioDeNacimiento)) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - YEAR(anioDeNacimiento)) >= 18 AND (YEAR(NOW()) - YEAR(anioDeNacimiento)) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad, YEAR(fecha_creacion), MONTH(fecha_creacion)
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) >= 18 AND (YEAR(NOW()) - anioDeNacimiento) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) >= 18 AND (YEAR(NOW()) - anioDeNacimiento) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) >= 18 AND (YEAR(NOW()) - anioDeNacimiento) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) >= 18 AND (YEAR(NOW()) - anioDeNacimiento) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) >= 18 AND (YEAR(NOW()) - anioDeNacimiento) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) >= 18 AND (YEAR(NOW()) - anioDeNacimiento) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad
+[2023-11-21][INFO]Ejecutando query: SELECT s.descripcion as genero, YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuariosPorGenero
+                        FROM usuarios u
+                        INNER JOIN sexo s ON u.sexo = s.id
+                        WHERE u.fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY genero, ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) >= 18 AND (YEAR(NOW()) - anioDeNacimiento) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) >= 18 AND (YEAR(NOW()) - anioDeNacimiento) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) >= 18 AND (YEAR(NOW()) - anioDeNacimiento) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) >= 18 AND (YEAR(NOW()) - anioDeNacimiento) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad
+[2023-11-21][INFO]Ejecutando query: SELECT CASE
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) < 18 THEN 'Menor'
+                            WHEN (YEAR(NOW()) - anioDeNacimiento) >= 18 AND (YEAR(NOW()) - anioDeNacimiento) < 65 THEN 'Medio'
+                            ELSE 'Jubilado'
+                        END as categoria_edad,
+                        COUNT(id) as cantidadUsuariosPorEdad
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY categoria_edad
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, DAY(fecha_creacion) as DIA, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, DAY(fecha_creacion) as DIA, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                          AND (YEAR(fecha_creacion) > YEAR('2023-11-10') OR MONTH(fecha_creacion) > MONTH('2023-11-10') OR DAY(fecha_creacion) >= DAY('2023-11-10'))
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                          AND (YEAR(fecha_creacion) > YEAR('2023-11-10') OR MONTH(fecha_creacion) >= MONTH('2023-11-10'))
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE YEAR(fecha_creacion) >= YEAR('2023-11-10')
+                          AND fecha_creacion BETWEEN '2023-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE YEAR(fecha_creacion) >= YEAR('2022-01-10')
+                          AND fecha_creacion BETWEEN '2022-01-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2022-01-10' AND '2023-11-20'
+                          AND (YEAR(fecha_creacion) > YEAR('2022-01-10') OR MONTH(fecha_creacion) >= MONTH('2022-01-10'))
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2022-01-10' AND '2022-12-20'
+                          AND (YEAR(fecha_creacion) > YEAR('2022-01-10') OR MONTH(fecha_creacion) >= MONTH('2022-01-10'))
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE YEAR(fecha_creacion) >= YEAR('2022-01-10')
+                          AND fecha_creacion BETWEEN '2022-01-10' AND '2022-12-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE YEAR(fecha_creacion) >= YEAR('2023-11-01')
+                          AND fecha_creacion BETWEEN '2023-11-01' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-01' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-01' AND '2023-11-20'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, DAY(fecha_creacion) as DIA, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-01' AND '2023-11-20'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(fecha_creacion) as ANIO, MONTH(fecha_creacion) as MES, DAY(fecha_creacion) as DIA, COUNT(id) as cantidadUsuariosNuevos
+                        FROM usuarios
+                        WHERE fecha_creacion BETWEEN '2023-11-01' AND '2023-11-20'
+                        GROUP BY ANIO, MES, DIA
+[2023-11-21][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'admin@mail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '1970-01-01' AND '1970-01-01'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '1970-01-01' AND '1970-01-01'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, MONTH(u.fecha_creacion) as MES, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-01-11' AND '2023-11-10'
+                        GROUP BY ANIO, MES
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT YEAR(u.fecha_creacion) as ANIO, COUNT(u.id) as cantidadUsuarios
+                        FROM usuarios u
+                        WHERE u.fecha_creacion BETWEEN '2020-11-10' AND '2023-11-20'
+                        GROUP BY ANIO
+[2023-11-21][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123' AND verificado = 1
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, estado FROM partidas WHERE userId LIKE 20 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 57 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 57
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 57 AND userId LIKE 20 AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 57 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (20)
+[2023-11-21][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 20 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                id_pregunta,
+                SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                COUNT(*) AS total_apariciones
+            FROM estadistica
+            GROUP BY id_pregunta
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 5
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 7
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 8
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 11
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 12
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 13
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 15
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 17
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 19
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 21
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 22
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 23
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 25
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 26
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 27
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 28
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 29
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 32
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 33
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 34
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 35
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 36
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 37
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 38
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 41
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 42
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 43
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 47
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 49
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 50
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 52
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 54
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 57
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 61
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 68
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 69
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 71
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 72
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 73
+[2023-11-21][INFO]El nivel del jugador es 65.384615384615
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Se seleccionó una pregunta con nivel 65.384615384615 y dificultad 
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta
+                FROM preguntas
+                WHERE dificultad = ''
+                  AND (
+                    ('65.384615384615' = 'principiante' AND 65.384615384615 >= 70 AND 65.384615384615 <= 100)
+                    OR ('65.384615384615' = 'avanzado' AND 65.384615384615 >= 0 AND 65.384615384615 < 30)
+                    OR ('65.384615384615' = 'intermedio' AND 65.384615384615 >= 30 AND 65.384615384615 < 70)
+                    OR ('65.384615384615' = 'intermedio' AND 65.384615384615 IS NULL)
+                  )
+                ORDER BY RAND() LIMIT 1
+[2023-11-21][ERROR]No se encontraron preguntas según la dificultad del jugador.
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM preguntas WHERE estado = 'ACTIVA' AND dificultad = 'media' ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId, nivel_de_jugador) VALUES (20, 58, 'intermedio')
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 14;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 14 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                    SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                    COUNT(*) AS total_apariciones
+                FROM estadistica
+                WHERE id_pregunta = 14
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 14;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 14 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-21][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 55 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM respuestas WHERE id = 55
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 55
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 189 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 55, estado = 0 WHERE id = 189 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (14, 0, 20, 58, NOW())
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: UPDATE partidas SET vidas=2 WHERE id LIKE 58
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (20, 58, 1)
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 59 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 59 ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 234 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 234
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 190 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 234, estado = 0 WHERE id = 190 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE partidas SET vidasBot=2 WHERE id LIKE 58
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                id_pregunta,
+                SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                COUNT(*) AS total_apariciones
+            FROM estadistica
+            GROUP BY id_pregunta
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 5
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 7
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 8
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 11
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 12
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 13
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 14
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 15
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 17
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 19
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 21
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 22
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 23
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 25
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 26
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 27
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 28
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 29
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 32
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 33
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 34
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 35
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 36
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 37
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 38
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 41
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 42
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 43
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 47
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 49
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 50
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 52
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 54
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 57
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 61
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 68
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 69
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 71
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 72
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 73
+[2023-11-21][INFO]El nivel del jugador es 64.150943396226
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Se seleccionó una pregunta con nivel 64.150943396226 y dificultad 
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta
+                FROM preguntas
+                WHERE dificultad = ''
+                  AND (
+                    ('64.150943396226' = 'principiante' AND 64.150943396226 >= 70 AND 64.150943396226 <= 100)
+                    OR ('64.150943396226' = 'avanzado' AND 64.150943396226 >= 0 AND 64.150943396226 < 30)
+                    OR ('64.150943396226' = 'intermedio' AND 64.150943396226 >= 30 AND 64.150943396226 < 70)
+                    OR ('64.150943396226' = 'intermedio' AND 64.150943396226 IS NULL)
+                  )
+                ORDER BY RAND() LIMIT 1
+[2023-11-21][ERROR]No se encontraron preguntas según la dificultad del jugador.
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM preguntas WHERE estado = 'ACTIVA' AND dificultad = 'media' ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId, nivel_de_jugador) VALUES (20, 58, 'intermedio')
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 39;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 39 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                    SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                    COUNT(*) AS total_apariciones
+                FROM estadistica
+                WHERE id_pregunta = 39
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 39;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 39 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 191 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = null, estado = 0 WHERE id = 191 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: UPDATE partidas SET vidas=1 WHERE id LIKE 58
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (20, 58, 1)
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 71 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 71 ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 275 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 275
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 192 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 275, estado = 0 WHERE id = 192 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE partidas SET vidasBot=1 WHERE id LIKE 58
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                id_pregunta,
+                SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                COUNT(*) AS total_apariciones
+            FROM estadistica
+            GROUP BY id_pregunta
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 5
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 7
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 8
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 11
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 12
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 13
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 14
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 15
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 17
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 19
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 21
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 22
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 23
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 25
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 26
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 27
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 28
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 29
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 32
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 33
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 34
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 35
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 36
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 37
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 38
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 41
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 42
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 43
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 47
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 49
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 50
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 52
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 54
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 57
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 61
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 68
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 69
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 71
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'facil' WHERE id_pregunta = 72
+[2023-11-21][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 73
+[2023-11-21][INFO]El nivel del jugador es 64.150943396226
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Se seleccionó una pregunta con nivel 64.150943396226 y dificultad 
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta
+                FROM preguntas
+                WHERE dificultad = ''
+                  AND (
+                    ('64.150943396226' = 'principiante' AND 64.150943396226 >= 70 AND 64.150943396226 <= 100)
+                    OR ('64.150943396226' = 'avanzado' AND 64.150943396226 >= 0 AND 64.150943396226 < 30)
+                    OR ('64.150943396226' = 'intermedio' AND 64.150943396226 >= 30 AND 64.150943396226 < 70)
+                    OR ('64.150943396226' = 'intermedio' AND 64.150943396226 IS NULL)
+                  )
+                ORDER BY RAND() LIMIT 1
+[2023-11-21][ERROR]No se encontraron preguntas según la dificultad del jugador.
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM preguntas WHERE estado = 'ACTIVA' AND dificultad = 'media' ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId, nivel_de_jugador) VALUES (20, 58, 'intermedio')
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 20;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 20 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                    SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                    COUNT(*) AS total_apariciones
+                FROM estadistica
+                WHERE id_pregunta = 20
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 20;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 20 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-21][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 78 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM respuestas WHERE id = 78
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 78
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 193 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 78, estado = 1 WHERE id = 193 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (20, 1, 20, 58, NOW())
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (20, 58, 1)
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 46 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 46 ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 184 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 184
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 194 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 184, estado = 0 WHERE id = 194 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidasBot=0, ganada=1 WHERE id LIKE 58
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 58 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (20)
+[2023-11-21][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 20 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 59 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]El nivel del jugador es 64.814814814815
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Se seleccionó una pregunta con nivel 64.814814814815 y dificultad 
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta
+            FROM preguntas
+            WHERE dificultad = ''
+              AND (
+                ('64.814814814815' = 'principiante' AND 64.814814814815 >= 70 AND 64.814814814815 <= 100)
+                OR ('64.814814814815' = 'avanzado' AND 64.814814814815 >= 0 AND 64.814814814815 < 30)
+                OR ('64.814814814815' = 'intermedio' AND 64.814814814815 >= 30 AND 64.814814814815 < 70)
+                OR ('64.814814814815' = 'intermedio' AND 64.814814814815 IS NULL)
+              )
+            ORDER BY RAND() LIMIT 1
+[2023-11-21][ERROR]No se encontraron preguntas según la dificultad del jugador.
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM preguntas WHERE estado = 'ACTIVA' AND dificultad = 'media' ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId, nivel_de_jugador) VALUES (20, 59, 'intermedio')
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 44;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 44 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                    SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                    COUNT(*) AS total_apariciones
+                FROM estadistica
+                WHERE id_pregunta = 44
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 44;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 44 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-21][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 175 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM respuestas WHERE id = 175
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 175
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 195 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 175, estado = 0 WHERE id = 195 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (44, 0, 20, 59, NOW())
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 59 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: UPDATE partidas SET vidas=2 WHERE id LIKE 59
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 59 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 59 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]El nivel del jugador es intermedio
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Se seleccionó una pregunta con nivel intermedio y dificultad media
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta
+                FROM preguntas
+                WHERE dificultad = 'media'
+                  AND (
+                    ('intermedio' = 'principiante' AND 63.636363636364 >= 70 AND 63.636363636364 <= 100)
+                    OR ('intermedio' = 'avanzado' AND 63.636363636364 >= 0 AND 63.636363636364 < 30)
+                    OR ('intermedio' = 'intermedio' AND 63.636363636364 >= 30 AND 63.636363636364 < 70)
+                    OR ('intermedio' = 'intermedio' AND 63.636363636364 IS NULL)
+                  )
+                ORDER BY RAND() LIMIT 1
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId, nivel_de_jugador) VALUES (20, 59, 'intermedio')
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 24;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 24 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                    SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                    COUNT(*) AS total_apariciones
+                FROM estadistica
+                WHERE id_pregunta = 24
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 24;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 24 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 94 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM respuestas WHERE id = 94
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 94
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 196 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 94, estado = 0 WHERE id = 196 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (24, 0, 20, 59, NOW())
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 59 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: UPDATE partidas SET vidas=1 WHERE id LIKE 59
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 59 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (20, 59, 1)
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 30 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 30 ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 117 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 117
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 197 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 117, estado = 1 WHERE id = 197 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 59 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]El nivel del jugador es intermedio
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Se seleccionó una pregunta con nivel intermedio y dificultad media
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta
+                FROM preguntas
+                WHERE dificultad = 'media'
+                  AND (
+                    ('intermedio' = 'principiante' AND 62.5 >= 70 AND 62.5 <= 100)
+                    OR ('intermedio' = 'avanzado' AND 62.5 >= 0 AND 62.5 < 30)
+                    OR ('intermedio' = 'intermedio' AND 62.5 >= 30 AND 62.5 < 70)
+                    OR ('intermedio' = 'intermedio' AND 62.5 IS NULL)
+                  )
+                ORDER BY RAND() LIMIT 1
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId, nivel_de_jugador) VALUES (20, 59, 'intermedio')
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 58;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 58 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                    SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                    COUNT(*) AS total_apariciones
+                FROM estadistica
+                WHERE id_pregunta = 58
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 58;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 58 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 231 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM respuestas WHERE id = 231
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 231
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 198 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 231, estado = 0 WHERE id = 198 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (58, 0, 20, 59, NOW())
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 59 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 59
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 59 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (20)
+[2023-11-21][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 20 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 60 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]El nivel del jugador es intermedio
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Se seleccionó una pregunta con nivel intermedio y dificultad media
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta
+                FROM preguntas
+                WHERE dificultad = 'media'
+                  AND (
+                    ('intermedio' = 'principiante' AND 61.40350877193 >= 70 AND 61.40350877193 <= 100)
+                    OR ('intermedio' = 'avanzado' AND 61.40350877193 >= 0 AND 61.40350877193 < 30)
+                    OR ('intermedio' = 'intermedio' AND 61.40350877193 >= 30 AND 61.40350877193 < 70)
+                    OR ('intermedio' = 'intermedio' AND 61.40350877193 IS NULL)
+                  )
+                ORDER BY RAND() LIMIT 1
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId, nivel_de_jugador) VALUES (20, 60, 'intermedio')
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 2;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 2 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                    SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                    COUNT(*) AS total_apariciones
+                FROM estadistica
+                WHERE id_pregunta = 2
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 2;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 2 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 7 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM respuestas WHERE id = 7
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 7
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 199 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 7, estado = 1 WHERE id = 199 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (2, 1, 20, 60, NOW())
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 60 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (20, 60, 1)
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 53 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 53 ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 209 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 209
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 200 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 209, estado = 1 WHERE id = 200 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 60 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]El nivel del jugador es intermedio
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Se seleccionó una pregunta con nivel intermedio y dificultad media
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta
+                FROM preguntas
+                WHERE dificultad = 'media'
+                  AND (
+                    ('intermedio' = 'principiante' AND 62.068965517241 >= 70 AND 62.068965517241 <= 100)
+                    OR ('intermedio' = 'avanzado' AND 62.068965517241 >= 0 AND 62.068965517241 < 30)
+                    OR ('intermedio' = 'intermedio' AND 62.068965517241 >= 30 AND 62.068965517241 < 70)
+                    OR ('intermedio' = 'intermedio' AND 62.068965517241 IS NULL)
+                  )
+                ORDER BY RAND() LIMIT 1
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId, nivel_de_jugador) VALUES (20, 60, 'intermedio')
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 19;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 19 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                    SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                    COUNT(*) AS total_apariciones
+                FROM estadistica
+                WHERE id_pregunta = 19
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 19;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 19 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 75 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM respuestas WHERE id = 75
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 75
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 201 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 75, estado = 0 WHERE id = 201 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (19, 0, 20, 60, NOW())
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 60 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: UPDATE partidas SET vidas=2 WHERE id LIKE 60
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 60 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (20, 60, 1)
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 30 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 30 ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 117 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 117
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 202 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 117, estado = 1 WHERE id = 202 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 60 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers
+                    SET nivel_de_jugador = 'intermedio'
+                    WHERE userId = 20
+[2023-11-21][INFO]El nivel del jugador es intermedio
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_aciertos
+                FROM estadistica
+                WHERE id_usuario = '20' AND respuesta = '1'
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) AS cant_intentos
+                FROM estadistica
+                WHERE id_usuario = '20'
+[2023-11-21][INFO]Se seleccionó una pregunta con nivel intermedio y dificultad media
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta
+                FROM preguntas
+                WHERE dificultad = 'media'
+                  AND (
+                    ('intermedio' = 'principiante' AND 61.016949152542 >= 70 AND 61.016949152542 <= 100)
+                    OR ('intermedio' = 'avanzado' AND 61.016949152542 >= 0 AND 61.016949152542 < 30)
+                    OR ('intermedio' = 'intermedio' AND 61.016949152542 >= 30 AND 61.016949152542 < 70)
+                    OR ('intermedio' = 'intermedio' AND 61.016949152542 IS NULL)
+                  )
+                ORDER BY RAND() LIMIT 1
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId, nivel_de_jugador) VALUES (20, 60, 'intermedio')
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 30;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 30 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT 
+                    SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) AS porcentaje_aciertos,
+                    COUNT(*) AS total_apariciones
+                FROM estadistica
+                WHERE id_pregunta = 30
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE id_pregunta = 30;
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 30 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 120 AND es_correcta = 1
+[2023-11-21][INFO]Ejecutando query: SELECT id_pregunta FROM respuestas WHERE id = 120
+[2023-11-21][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 120
+[2023-11-21][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 20 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-21][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 203 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 120, estado = 0 WHERE id = 203 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-21][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (30, 0, 20, 60, NOW())
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 60 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: UPDATE partidas SET vidas=1 WHERE id LIKE 60
+[2023-11-21][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 60 ORDER BY id DESC LIMIT 1
+[2023-11-21][INFO]Ejecutando query: SELECT p.*, c.descripcion as categoria FROM preguntas as p JOIN categoria as c ON c.id_categoria = p.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-21][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (20, 60, 1)
+[2023-11-21][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 29 ORDER BY RAND();
+[2023-11-21][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123' AND verificado = 1
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-21][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 20 
+[2023-11-21][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;

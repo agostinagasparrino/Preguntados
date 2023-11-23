@@ -1,0 +1,78 @@
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( 'Maximiliano', 'chester9322@gmail.com' )
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`) 
+        VALUES ('','','','','','','','',)
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( '', '' )
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM canciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: SELECT * FROM presentaciones
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( '', '' )
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( '', '' )
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( '', '' )
+[2023-10-11][INFO]Ejecutando query: INSERT INTO `integrantes`( `nombre`, `instrumento`) 
+                VALUES ( '', '' )

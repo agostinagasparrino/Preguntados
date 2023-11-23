@@ -1,0 +1,116 @@
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'pablo@mail.com' AND password LIKE '12345'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'pablo@mail.com' AND password LIKE '12345'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 15 
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'admin@mail.com' AND password LIKE '12345'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'REPORTADA'
+[2023-11-02][INFO]Ejecutando query: SELECT * FROM preguntas WHERE estado = 'INACTIVA'
+[2023-11-02][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+>>>>>>> master

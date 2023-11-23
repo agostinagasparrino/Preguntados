@@ -1,0 +1,100 @@
+<div class="container mt-4 pt-5 pb-5 mb-5 text-black">
+{{#pregunta}}
+
+   <div class="d-flex justify-content-between align-items-center" id="categoriaContainer" nombre="{{categoria}}">
+    <h3 class="text-left p-3" id="temporizador"></h3>
+    <h3 class="text-center p-3 mb-0">Categoría: {{categoria}}</h3>
+</div>
+
+{{/pregunta}}
+    <div class="p-5" id="preguntas" style="background-color:#4B0082;">
+        {{#pregunta}}
+
+        <h2 class="text-center">{{pregunta}}</h2>
+        <p class="text-center {{#dificultad}}{{.}}-color{{/dificultad}}">Dificultad: {{dificultad}}</p>
+        <p class="text-center">Nivel de jugador: {{nivelJugador}}</p>
+        {{/pregunta}}
+
+        {{#respuestas}}
+        <div class="card mt-3" style="background-color:rgba(111, 66, 193, 0.9)">
+            <div class="card-body">
+                <a href="/pregunta/validateAnswer?respuestaId={{id}}&userId={{userId}}">
+                    <p class="card-text text-center">{{respuesta}}</p>
+                </a>
+            </div>
+        </div>
+        {{/respuestas}}
+    </div>
+</div>
+
+<a id="vencido" href="/pregunta/tiempoVencido?&userId={{userId}}" style="visibility:hidden"></a>
+
+<style>
+    .facil-bg {
+        background-color: lightgreen; /* Color de fondo para dificultad fácil */
+    }
+
+    .media-bg {
+        background-color: lightyellow; /* Color de fondo para dificultad media */
+    }
+
+    .dificil-bg {
+        background-color: lightcoral; /* Color de fondo para dificultad difícil */
+    }
+</style>
+
+
+
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+  // Obtener la categoría desde tus datos
+  
+  const categoriaPregunta = document.getElementById("categoriaContainer").getAttribute("nombre");
+
+  // Llamar a la función para cambiar el color del fondo
+  cambiarColorFondoCategoria(categoriaPregunta);
+
+  let tiempo = 10;
+  const temporizador = document.getElementById("temporizador");
+  temporizador.innerHTML = tiempo;
+
+  setTimeout(() => set_tiempo(), 1000);
+
+  function set_tiempo() {
+    tiempo--;
+    temporizador.innerHTML = tiempo;
+    if (tiempo > 0) setTimeout(() => set_tiempo(), 1000);
+    else document.getElementById("vencido").click();
+  }
+
+  function cambiarColorFondoCategoria(categoria) {
+    const categoriaContainer = document.getElementById("categoriaContainer");
+    let colorFondo;
+    switch (categoria.toLowerCase()) {
+      case "historia":
+        colorFondo = "rgba(255, 255, 0, 0.6)";;
+        break;
+      case "geografia":
+        colorFondo = "rgba(0, 0, 255, 0.6)";
+        break;
+      case "ciencia":
+        colorFondo = "rgba(0, 128, 0, 0.6)";
+        break;
+      case "arte":
+        colorFondo = "rgba(255, 0, 0, 0.6)";
+        break;
+      case "deportes":
+        colorFondo = "rgba(255, 165, 0, 0.6)";
+        break;
+      case "entretenimiento":
+        colorFondo = "rgba(128, 0, 128, 0.6)";
+        break;
+      default:
+        colorFondo = "rgba(255, 255, 255, 0.6)";
+    }
+    categoriaContainer.style.backgroundColor = colorFondo;
+    console.log(colorFondo);
+  }
+});
+
+</script>

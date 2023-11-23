@@ -1,0 +1,33 @@
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123'
+[2023-10-19][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-19][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-19][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123'
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 9 ORDER BY RAND();
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 25 AND es_correcta = 1
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 11 ORDER BY RAND();
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 29 AND es_correcta = 1
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 13 ORDER BY RAND();
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 33 AND es_correcta = 1
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 18 ORDER BY RAND();
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 42 AND es_correcta = 1
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 5 ORDER BY RAND();
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123'
+[2023-10-19][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-19][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 7 ORDER BY RAND();
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 20 AND es_correcta = 1
+[2023-10-19][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 
+[2023-10-19][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 20 AND es_correcta = 1
+[2023-10-19][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 

@@ -1,0 +1,1514 @@
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 517 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 517, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 73 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 73 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 283 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 517 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 283
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 283, estado = 0 WHERE id = 1931 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidasBot=2 WHERE id LIKE 517
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 517 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 50
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 517)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 63;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 63 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = NULL, estado = 0 WHERE id = 1932 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 517 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidas=2 WHERE id LIKE 517
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 517 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 517, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 55 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 55 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 217 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 517 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 217
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 217, estado = 0 WHERE id = 1933 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidasBot=1 WHERE id LIKE 517
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 517 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 50
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 517)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 29;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 29 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = NULL, estado = 0 WHERE id = 1934 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 517 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidas=1 WHERE id LIKE 517
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 115 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 517
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 517 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 517 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 50
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 518)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 12;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 12 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 48 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 48
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 48, estado = 1 WHERE id = 1935 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 518, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 47 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 47 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 186 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 186
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 186, estado = 1 WHERE id = 1936 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 50
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 518)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 12;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 12 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 48 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 48
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 48, estado = 1 WHERE id = 1937 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 518, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 52 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 52 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 208 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 208
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 208, estado = 0 WHERE id = 1938 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidasBot=2 WHERE id LIKE 518
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 50
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 518)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 17;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 17 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 65 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 65
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 65, estado = 1 WHERE id = 1939 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, fecha)
+                        VALUES (17, 1, 23, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 518, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 17 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 17 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 66 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 66
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 66, estado = 0 WHERE id = 1940 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidasBot=1 WHERE id LIKE 518
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 52.380952380952
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 518)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 63;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 63 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 249 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 249
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 249, estado = 1 WHERE id = 1941 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (63, 1, 23, 518, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 54.545454545455
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 518)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 30;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 30 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 119 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 119
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 119, estado = 0 WHERE id = 1942 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 30
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 54.545454545455 WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (30, 0, 23, 518, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidas=2 WHERE id LIKE 518
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 518, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 16 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 16 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 61 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 61
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 61, estado = 0 WHERE id = 1943 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 16
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 52.173913043478 WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidasBot=0, ganada=1 WHERE id LIKE 518
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 518 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 519 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 52.173913043478
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 519)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 47;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 47 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 186 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 186
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 186, estado = 1 WHERE id = 1944 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 47
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = intermedio WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 186 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 519
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 519 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 519 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 52.173913043478
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 520)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 53;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 53 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 209 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 209
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 209, estado = 1 WHERE id = 1945 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 53
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (53, 1, 23, 520, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 520, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 23 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 23 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 90 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 90
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 90, estado = 0 WHERE id = 1946 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 23
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidasBot=2 WHERE id LIKE 520
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 54.166666666667
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 520)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 35;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 35 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 138 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 138
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 138, estado = 0 WHERE id = 1947 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 35
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (35, 0, 23, 520, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidas=2 WHERE id LIKE 520
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 520, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 39 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 39 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 154 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 154
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 154, estado = 0 WHERE id = 1948 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 39
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidasBot=1 WHERE id LIKE 520
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 52
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 520)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 59;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 59 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 233 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 233
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 233, estado = 1 WHERE id = 1949 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 59
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (59, 1, 23, 520, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 520, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 34 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 34 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 133 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 133
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 133, estado = 1 WHERE id = 1950 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 34
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 53.846153846154
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 520)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 29;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 29 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 116 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 116
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 116, estado = 0 WHERE id = 1951 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 29
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (29, 0, 23, 520, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidas=1 WHERE id LIKE 520
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 520, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 41 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 41 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 161 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 161
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 161, estado = 0 WHERE id = 1952 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 41
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidasBot=0, ganada=1 WHERE id LIKE 520
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 520 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 521 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 51.851851851852
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 521)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 64;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 64 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 254 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 254
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 254, estado = 0 WHERE id = 1953 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 64
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (64, 0, 23, 521, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 521 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidas=2 WHERE id LIKE 521
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 521 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 521, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 37 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 37 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 146 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 521 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 146
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 146, estado = 0 WHERE id = 1954 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 37
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 37 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 147 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 521 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 147
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 37 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 148 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 148
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 37 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 147 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 521 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 147
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 37 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 148 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 148
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 37 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 146 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 521 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 146
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 37 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 146 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 521 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 146
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 37 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 146 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 521 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 146
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 254 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 521
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 521 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 521 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 522 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Mi nivel es 50
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '23'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (23, 522)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 12;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 12 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 47 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 47
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 47, estado = 0 WHERE id = 1955 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 12
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (12, 0, 23, 522, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 522 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidas=2 WHERE id LIKE 522
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 522 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (23, 522, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 33 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 33 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 130 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 522 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 130
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 130, estado = 0 WHERE id = 1956 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 33
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '23'
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers (userId, nivel_de_jugador) VALUES (23, 'intermedio')
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidasBot=2 WHERE id LIKE 522
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 522 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 522
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 522 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 522 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 523 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 523
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 523 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 523 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 524 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 524
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 524 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 524 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 525 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 525
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 525 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123' AND verificado = 1
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, estado FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 526 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 526
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 526 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 526 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 527 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 527
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 527 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 527 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 528 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 528
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 528 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 528 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 529 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 529
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 529 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 529 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (23)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 23 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 530 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 23 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 530
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 530 AND userId LIKE 23 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123' AND verificado = 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`, `foto`, `token`) 
+        VALUES ('Maximiliano','Rabenko','Argentina','LUIS GUILLON','chester9322@gmail.com','123','Maxi','1993',1, '1700227497.jpg', '655769a9c551a')
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `usuarios` WHERE `email` = 'chester9322@gmail.com'
+[2023-11-17][INFO]Ejecutando query: SELECT token FROM usuarios WHERE email = 'chester9322@gmail.com'
+[2023-11-17][INFO]Ejecutando query: UPDATE usuarios SET verificado = '1' WHERE email = 'chester9322@gmail.com'
+[2023-11-17][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123' AND verificado = 1
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, estado FROM partidas WHERE userId LIKE 24 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (24)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 24 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '24'
+[2023-11-17][INFO]Mi nivel es 
+[2023-11-17][INFO]Me dieron pregunta dificil
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '24'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'dificil' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'dificil' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'dificil' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (24, 531)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 45;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 45 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 180 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 180
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 180, estado = 0 WHERE id = 1958 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 45
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'principiante' WHERE userId = 24 
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (45, 0, 24, 531, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidas=2 WHERE id LIKE 531
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (24, 531, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 40 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 40 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 158 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 158
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 158, estado = 0 WHERE id = 1959 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 40
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'principiante' WHERE userId = 24 
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidasBot=2 WHERE id LIKE 531
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '24'
+[2023-11-17][INFO]Mi nivel es 0
+[2023-11-17][INFO]Me dieron pregunta dificil
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '24'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'dificil' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'dificil' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'dificil' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (24, 531)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 13;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 13 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 52 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 52
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 52, estado = 1 WHERE id = 1960 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'dificil' WHERE id_pregunta = 13
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+            FROM estadistica
+            WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'principiante' WHERE userId = 24 
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (13, 1, 24, 531, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (24, 531, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 18 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 18 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 69 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 69, estado =  WHERE id = 1961 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 18 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 71 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 71
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 71, estado = 0 WHERE id = 1961 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 18
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 24 
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidasBot=1 WHERE id LIKE 531
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Mi nivel es 50
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '24'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (24, 531)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 4;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 4 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = NULL, estado = 0 WHERE id = 1962 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Mi nivel es 50
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '24'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (24, 531)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 4;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 4 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = NULL, estado = 0 WHERE id = 1963 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 18 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 70 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 70
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 52 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET estado=0, vidas=0, ganada=0 WHERE id LIKE 531
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET estado=0 WHERE partidaId LIKE 531 AND userId LIKE 24 AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 531 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: INSERT INTO partidas(userId) VALUES (24)
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM partidas WHERE userId LIKE 24 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Mi nivel es 50
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '24'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (24, 532)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 10 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 1964 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = NULL, estado = 0 WHERE id = 1964 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 24 
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidas=2 WHERE id LIKE 532
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (24, 532, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 49 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 49 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 195 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 195
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 49 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 196 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 196
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 1965 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 196, estado = 0 WHERE id = 1965 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 49
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 24 
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidasBot=2 WHERE id LIKE 532
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Mi nivel es 50
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '24'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (24, 532)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 10 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL AND TIMESTAMPDIFF(SECOND, date, NOW()) <= 20
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 39 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 39
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 1966 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 39, estado = 1 WHERE id = 1966 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 10
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 24 
+[2023-11-17][INFO]Ejecutando query: INSERT INTO estadistica (id_pregunta, respuesta, id_usuario, id_partida, fecha)
+                        VALUES (10, 1, 24, 532, NOW())
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId,bot) VALUES (24, 532, 1)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 42 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 42 ORDER BY RAND() LIMIT 1;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 165 AND es_correcta = 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT respuestas.id_pregunta, respuestas.es_correcta
+                    FROM respuestas
+                    WHERE respuestas.id = 165
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 1967 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = 165, estado = 0 WHERE id = 1967 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE preguntas SET dificultad = 'media' WHERE id_pregunta = 42
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 24 
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidasBot=1 WHERE id LIKE 532
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Mi nivel es 66.666666666667
+[2023-11-17][INFO]Me dieron pregunta media
+[2023-11-17][INFO]Ejecutando query: SELECT P.id_pregunta, e.porcentaje
+                FROM preguntas P
+                LEFT JOIN (
+                    SELECT id_pregunta,
+                           (SUM(CASE WHEN respuesta = '1' THEN 1 ELSE 0 END) / COUNT(*) * 100) AS porcentaje
+                    FROM estadistica
+                    GROUP BY id_pregunta) e 
+                    ON P.id_pregunta = e.id_pregunta
+                WHERE P.id_pregunta NOT IN (
+                        SELECT id_pregunta FROM estadistica E
+                        WHERE E.respuesta = '1' AND E.id_usuario = '24'
+                    )
+                    HAVING porcentaje >= 70 AND porcentaje <= 100 AND 'media' = 'facil'
+                        OR porcentaje >= 0 AND porcentaje < 30 AND 'media' = 'dificil'
+                        OR porcentaje >= 30 AND porcentaje < 70 AND 'media' = 'media'
+                        OR porcentaje IS NULL
+[2023-11-17][INFO]Ejecutando query: INSERT INTO useranswers(userId, partidaId) VALUES (24, 532)
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM preguntas WHERE id_pregunta = 42;
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id_pregunta = 42 ORDER BY RAND();
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, bot FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT COUNT(*) as count FROM useranswers WHERE id = 1968 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET respuestaId = null, estado = 0 WHERE id = 1968 AND respuestaId IS NULL AND estado IS NULL
+[2023-11-17][INFO]Ejecutando query: SELECT id_usuario, respuesta
+                    FROM estadistica
+                    WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: UPDATE useranswers SET nivel_de_jugador = 'intermedio' WHERE userId = 24 
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: UPDATE partidas SET vidas=1 WHERE id LIKE 532
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 532 ORDER BY id DESC LIMIT 1
+[2023-11-17][INFO]Ejecutando query: SELECT * FROM useranswers WHERE userId = 24 AND respuestaId IS NULL AND estado IS NULL;
+[2023-11-17][INFO]Ejecutando query: SELECT COUNT(DISTINCT id_partida) AS cantidad_partidas
+                FROM estadistica
+                WHERE id_usuario = '24'
+[2023-11-17][INFO]Ejecutando query: SELECT COUNT(*) AS cantidad_respuestas_correctas
+                FROM estadistica
+                WHERE id_usuario = '24' AND respuesta = '1'
+[2023-11-17][INFO]El jugador lleva 2 partidas jugadas y 2 preguntas respondidas correctamente
+[2023-11-17][INFO]El jugador lleva 2 partidas jugadas y 2 preguntas respondidas correctamente, todavía no tiene el piso establecido
+[2023-11-17][INFO]Ejecutando query: SELECT id_pregunta
+            FROM preguntas
+            WHERE dificultad = 'media'
+            ORDER BY RAND()
+            LIMIT 5;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;
+[2023-11-17][INFO]Ejecutando query: SELECT u.id as userId, u.nombreusuario as userName, COUNT(p.id) as total, SUM(p.ganada) as ganadas FROM partidas as p JOIN usuarios as u on u.id=p.userId GROUP BY userName ORDER BY ganadas DESC LIMIT 10;

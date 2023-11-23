@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Pregunta2</title>
+  <link rel="icon" href="https://preguntados.com/resources/images/banner/willy2@3x.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/css/custom.css">
+  <link rel="stylesheet" href="../public/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="https://i.pinimg.com/564x/de/43/99/de43990412a2e9cac750e649715bf3be.jpg" height="32" width="32"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+          {{#user}}
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/"><img src="https://i.pinimg.com/originals/30/ce/b9/30ceb9e9d0644cc21643e9269524f15a.png" height="25" width="100"></a>
+          </li>
+          {{/user}}
+
+          {{#user}}
+          <li class="nav-item">
+            <a class="nav-link" href="/usuario/perfil">Perfil</a>
+          </li>
+          {{/user}}
+
+          {{#user}}
+          <li class="nav-item">
+            <a class="nav-link" href="/ranking/show">Ranking</a>
+          </li>
+          {{/user}}
+
+          {{#editor}}
+          <li class="nav-item">
+            <a class="nav-link" href="/">Editar</a>
+          </li>
+          {{/editor}}
+
+          <li class="nav-item">
+            <a class="nav-link" href="/login/salir" tabindex="-1">Salir</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <!-- Contenido de la página aquí -->
+  </div>
+
+</body>
+
+</html>

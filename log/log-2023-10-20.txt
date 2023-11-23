@@ -1,0 +1,322 @@
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 20 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 22 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 50 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 50 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 45 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 14 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 34 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 1 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123'
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 16 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 38 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 38 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 5 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 17 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-20][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-20][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-20][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 13 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123'
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 22 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 50 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 16 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 39 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 4 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                SET p.`puntos` = p.`puntos` + 1 
+                WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 8 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                SET p.`puntos` = p.`puntos` + 1 
+                WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 18 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                SET p.`puntos` = p.`puntos` + 1 
+                WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 15 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 37 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 22 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 50 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                SET p.`puntos` = p.`puntos` + 1 
+                WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 50 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                SET p.`puntos` = p.`puntos` + 1 
+                WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 50 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                SET p.`puntos` = p.`puntos` + 1 
+                WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 50 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                SET p.`puntos` = p.`puntos` + 1 
+                WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 17 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 40 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                SET p.`puntos` = p.`puntos` + 1 
+                WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 40 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                SET p.`puntos` = p.`puntos` + 1 
+                WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 16 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 37 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 8 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 22 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                SET p.`puntos` = p.`puntos` + 1 
+                WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 22 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                    INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                    SET p.`puntos` = p.`puntos` + 1 
+                    WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 22 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                    INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                    SET p.`puntos` = p.`puntos` + 1 
+                    WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 22 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                    INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                    SET p.`puntos` = p.`puntos` + 1 
+                    WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 22 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 7 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 10 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 10 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 26 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                    INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                    SET p.`puntos` = p.`puntos` + 1 
+                    WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 6 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 19 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 2 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 4 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                    INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                    SET p.`puntos` = p.`puntos` + 1 
+                    WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 4 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+                    INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+                    SET p.`puntos` = p.`puntos` + 1 
+                    WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 4 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` SET `puntos` = `puntos` + 1 WHERE `usuario_id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 23 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 53 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+        INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+        SET p.`puntos` = p.`puntos` + 1 
+        WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 53 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+        INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+        SET p.`puntos` = p.`puntos` + 1 
+        WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 3 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 6 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+        INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+        SET p.`puntos` = p.`puntos` + 1 
+        WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 17 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 41 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+        INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+        SET p.`puntos` = p.`puntos` + 1 
+        WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 6 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 18 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+        INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+        SET p.`puntos` = p.`puntos` + 1 
+        WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 11 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 29 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+        INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+        SET p.`puntos` = p.`puntos` + 1 
+        WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 11 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 28 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+        INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+        SET p.`puntos` = p.`puntos` + 1 
+        WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 28 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+        INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+        SET p.`puntos` = p.`puntos` + 1 
+        WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 28 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+        INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+        SET p.`puntos` = p.`puntos` + 1 
+        WHERE u.`id` = 16
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 9 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-20][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 2 ORDER BY RAND();
+[2023-10-20][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 4 AND es_correcta = 1
+[2023-10-20][INFO]Ejecutando query: UPDATE `puntajes` AS p
+        INNER JOIN `usuarios` AS u ON p.`usuario_id` = u.`id`
+        SET p.`puntos` = p.`puntos` + 1 
+        WHERE u.`id` = 16

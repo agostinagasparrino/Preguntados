@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pregunta2</title>
+    <link rel="icon" href="https://preguntados.com/resources/images/banner/willy2@3x.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/custom.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+</head>
+
+<body class="bodyAdmin">
+    <main id="mainAdmin"class="pt-3 min-vh-100 my-auto position-relative container-md col-md-6">
+        <section style="background-color:#4B0082;" class="rounded-0">
+            <article class="container-lg col-lg-10 px-2 bg-wood-light py-4 mx-auto">
+                <h2 class="text-special text-center mt-2 mb-5 fs-5 bg-wood py-3 container-shadow col-lg-10 mx-auto">Información del Administrador</h2>
+                <form class="mx-auto" id="formGraph">
+                    <div class="row g-3 align-items-center mb-4 justify-content-left ">
+                        <div class="col-auto ">
+                            <label for="filter" class="form-label text-white text-center mb-0">Filtro:</label>
+                            </div>
+                            <div class="col-lg-6 ">
+                            <select id="filter" class="form-select form-select-sm rounded-0 " name="filter">
+                                <option value="cantPlayers">Cantidad de jugadores</option>
+                                <option value="cantMatchPlayed">Cantidad de partidas jugadas</option>
+                                <option value="cantQuestionCreatedBySystem">Cantidad de preguntas creadas por sistema</option>
+                                <option value="cantQuestionCreatedByUser">Cantidad de preguntas creadas usuario</option>
+                                <option value="cantCorrectAnswers">Porcentaje de preguntas respondidas correctamente</option>
+                                <option value="cantUserXCountry">Cantidad de usuario por país</option>
+                                <option value="cantUserXGenre">Cantidad de usuarios por genero</option>
+                                <option value="cantUserXAgeGroup">Cantidad de usuarios por grupo de edad (menores, jubilados, adultos)</option>
+                                <option value="cantNewPlayers">Cantidad de usuarios nuevos</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-left">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-auto">
+                                <label class="form-label text-white mb-0" for="date_start">Desde: </label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="date" class="form-control rounded-0 text-center" name="date_start" id="date_start">
+                            </div>
+                        </div>
+                        <div class="row g-3 align-items-center">
+                            <div class="col-auto">
+                                <label class="form-label text-white mb-0" for="date_end">Hasta: </label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="date" class="form-control rounded-0 text-center" name="date_end" id="date_end">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto text-left mt-4 mb-2">
+                        <label for="groupBy" class="form-label text-white">Agrupar por:</label>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center bg-">
+                        <div class="d-flex justify-content-between">
+                            <input type="radio" class="form-check-input text-white px-2 rounded-0 mt-0" id="groupBy"
+                                name="groupBy" value="day">
+                            <label class="form-check-label text-white px-2 pb-0" for="groupBy">Día</label>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <input type="radio" class="form-check-input text-white px-2 rounded-0 mt-0" id="groupBy"
+                                name="groupBy" value="month">
+                            <label class="form-check-label text-white px-2 pb-0" for="groupBy">Mes</label>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <input type="radio" class="form-check-input text-white px-2 rounded-0 mt-0" id="groupBy"
+                                name="groupBy" value="year" checked>
+                            <label class="form-check-label text-white px-2 pb-0" for="groupBy">Año</label>
+                        </div>
+                    </div>
+                    <div class="text-center pt-5 pb-3">
+                        <button type="submit" class="btn btn-primary px-5 py-2" id="searchBtn">BUSCAR</button>
+                    </div>
+                    <div class="text-end pt-1 pb-3 pe-2">
+                        <button type="button" onClick="printToPDF()" class="btn btn-success rounded-0 container-shadow text-white px-3 py-1"
+                            id="generarPDF">PDF</button>
+                    </div>
+                </form>
+            </article>
+        <div id="chart-container">
+            <div class="row">
+                <h2 id="estadisticas"></h2>
+                <div id="chart" class="col-md-6"></div>
+                <div class="col-md-6" id="table"></div>
+            </div>
+        </div>
+        </section>
+    </main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="../public/js/html2pdf.bundle.js"></script>
+
+<script>
+    var chart = "";
+    var data = [];
+
+    function renderChart(labels, series) {
+
+        if(chart)chart.destroy();
+
+        var options = {
+            chart: {
+                type: 'donut'
+            },
+            series,
+            labels,
+            chartOptions: { labels }
+        }
+
+        chart = new ApexCharts(document.getElementById("chart"), options);
+        chart.render();
+    }
+
+
+    document.getElementById("formGraph").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var filter = document.getElementById("filter").value;
+        var dateStart = document.getElementById("date_start").value;
+        var dateEnd = document.getElementById("date_end").value;
+        var groupBy = document.querySelector('input[name="groupBy"]:checked').value;
+
+        axios.get(`http://127.0.0.1/admin/getGraph?filter=${filter}&date_start=${dateStart}&date_end=${dateEnd}&groupBy=${groupBy}`)
+            .then(function (response) {
+                data = response.data;
+                var series = data.series;
+                var labels = data.labels;
+                renderChart(labels, series);
+                generateTable()
+                document.getElementById("estadisticas").innerHTML="Estadísticas";
+            })
+            .catch(function (error) {
+                console.error(error);
+            });
+    });
+
+
+    function printToPDF() {
+        var chartContainer = document.getElementById("chart-container");
+
+        var pdfOptions = {
+            margin: 10,
+            filename: 'chart.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+
+        html2pdf(chartContainer, pdfOptions);
+    }
+
+
+    function generateTable() {
+       var tableElement = document.getElementById("table");
+       tableElement.innerHTML="";
+
+        var table = document.createElement("table");
+        var thead = document.createElement("thead");
+        var tbody = document.createElement("tbody");
+
+        var headerRow = document.createElement("tr");
+        for (var i = 0; i < data.labels.length; i++) {
+            var th = document.createElement("th");
+            th.textContent = data.labels[i];
+            headerRow.appendChild(th);
+        }
+        thead.appendChild(headerRow);
+
+        var dataRow = document.createElement("tr");
+        for (var j = 0; j < data.series.length; j++) {
+            var td = document.createElement("td");
+            td.textContent = data.series[j];
+            dataRow.appendChild(td);
+            tbody.appendChild(dataRow);
+        }
+
+        table.appendChild(thead);
+        table.appendChild(tbody);
+
+        tableElement.appendChild(table);
+    }
+
+
+
+
+</script>
+
+
+</body>
+
+</html>

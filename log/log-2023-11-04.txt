@@ -1,0 +1,92 @@
+[2023-11-04][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`, `foto`) 
+        VALUES ('Abel','Fleitas','Argentina','González Catán','leonardo.fleitas.sk@gmail.com','12345','leosk','1999',1, '1699053319.jpg')
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `usuarios` WHERE `email` = 'leonardo.fleitas.sk@gmail.com'
+[2023-11-04][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`, `foto`, `token`) 
+        VALUES ('Abel','Fleitas','Argentina','González Catán','leonardo.fleitas.sk@gmail.com','12345','leosk','1999',1, '1699063429.jpg', '6545a685e05e5')
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `usuarios` WHERE `email` = 'leonardo.fleitas.sk@gmail.com'
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'leonardo.fleitas.sk@gmail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`, `foto`, `token`) 
+        VALUES ('Abel','Fleitas','Argentina','González Catán','leonardo.fleitas.sk@gmail.com','12345','leosk','1999',1, '1699064101.jpg', '6545a925b2a47')
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `usuarios` WHERE `email` = 'leonardo.fleitas.sk@gmail.com'
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'leonardo.fleitas.sk@gmail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`, `foto`, `token`) 
+        VALUES ('Abel','Fleitas','Argentina','González Catán','leonardo.fleitas.sk@gmail.com','12345','leosk','1999',1, '1699065480.jpg', '6545ae8864663')
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `usuarios` WHERE `email` = 'leonardo.fleitas.sk@gmail.com'
+[2023-11-04][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`, `foto`, `token`) 
+        VALUES ('Abel','Fleitas','Argentina','González Catán','leonardo.fleitas.sk@gmail.com','12345','leosk','1999',1, '1699066063.jpg', '6545b0cf44f84')
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `usuarios` WHERE `email` = 'leonardo.fleitas.sk@gmail.com'
+[2023-11-04][INFO]Ejecutando query: SELECT token FROM usuarios WHERE email = 'leonardo.fleitas.sk@gmail.com'
+[2023-11-04][INFO]Ejecutando query: UPDATE usuarios SET verificado = '1' WHERE email = 'leonardo.fleitas.sk@gmail.com'
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'leonardo.fleitas.sk@gmail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`, `foto`, `token`) 
+        VALUES ('Abel','Fleitas','Argentina','González Catán','leonardo.fleitas.sk@gmail.com','12345','leosk','1999',1, '1699067517.jpg', '6545b67d7d46e')
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `usuarios` WHERE `email` = 'leonardo.fleitas.sk@gmail.com'
+[2023-11-04][INFO]Ejecutando query: SELECT token FROM usuarios WHERE email = 'leonardo.fleitas.sk@gmail.com'
+[2023-11-04][INFO]Ejecutando query: UPDATE usuarios SET verificado = '1' WHERE email = 'leonardo.fleitas.sk@gmail.com'
+[2023-11-04][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'leonardo.fleitas.sk@gmail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: INSERT INTO `usuarios`( `nombre`, `apellido`, `pais`, `ciudad`,`email`, `password`, `nombreUsuario`, `anioDeNacimiento`, `sexo`, `foto`, `token`) 
+        VALUES ('Maximiliano','Rabenko','Argentina','LUIS GUILLON','chester9322@gmail.com','123','maxi','1992',1, '1699109847.jpg', '65465bd7c6d30')
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `usuarios` WHERE `email` = 'chester9322@gmail.com'
+[2023-11-04][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'admin@mail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'leonardo.fleitas.sk@gmail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'usuario@mail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'usuario@mail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'usuario@mail.com' AND password LIKE '12345' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.*,r.descripcion FROM usuarios as u JOIN rol as r ON u.rol=r.id WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123' AND verificado = 1
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `preguntas` AS `p` JOIN `categoria` AS `c` ON p.id_categoria = c.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `preguntas` AS `p` JOIN `categoria` AS `c` ON p.id_categoria = c.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `preguntas` AS `p` JOIN `categoria` AS `c` ON p.id_categoria = c.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `preguntas` AS `p` JOIN `categoria` AS `c` ON p.id_categoria = c.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `preguntas` AS `p` JOIN `categoria` AS `c` ON p.id_categoria = c.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `preguntas` AS `p` JOIN `categoria` AS `c` ON p.id_categoria = c.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `preguntas` AS `p` JOIN `categoria` AS `c` ON p.id_categoria = c.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `preguntas` AS `p` JOIN `categoria` AS `c` ON p.id_categoria = c.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 17 
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `preguntas` AS `p` JOIN `categoria` AS `c` ON p.id_categoria = c.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `preguntas` AS `p` JOIN `categoria` AS `c` ON p.id_categoria = c.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-04][INFO]Ejecutando query: SELECT ua.estado 
+                FROM useranswers ua
+                JOIN respuestas r ON ua.respuestaId = r.id
+                JOIN preguntas p ON r.id_pregunta = p.id_pregunta
+                WHERE ua.userId = 17 
+                AND p.id_pregunta =  
+                AND r.es_correcta = 1
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-04][INFO]Ejecutando query: SELECT * FROM `preguntas` AS `p` JOIN `categoria` AS `c` ON p.id_categoria = c.id_categoria WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-04][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10

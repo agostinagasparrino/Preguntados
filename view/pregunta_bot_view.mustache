@@ -1,0 +1,37 @@
+<div class="container mt-5 pt-5 pb-5 mb-5" >
+    <h3 class="text-center" id="temporizador"></h3>
+    <div class="mt-5 p-5" style=" background-color: rgba(255, 255, 255, 0.6);">
+        {{#pregunta}}
+            <h2 class="text-center">{{pregunta}}</h2>
+            <p class="text-center">categoria: {{categoria}}</p>
+        {{/pregunta}}
+        {{#preguntaId}}
+            <a id="vencido" href="/pregunta/respuestaBot?preguntaId={{preguntaId}}"  style="visibility:hidden"></a>
+        {{/preguntaId}}
+
+        {{#respuestas}}
+        <div class="card mt-3">
+            <div class="card-body">
+                <p class="card-text text-center">{{respuesta}}</p>
+            </div>
+        </div>
+        {{/respuestas}}
+    </div>
+</div>
+
+
+<script>
+    let tiempo = 5;
+    const temporizador  = document.getElementById("temporizador");
+    temporizador.innerHTML = tiempo;
+
+    setTimeout(()=>set_tiempo(),1000)
+
+    function set_tiempo(){
+        tiempo--;
+        temporizador.innerHTML=tiempo
+        if(tiempo>0)setTimeout(()=>set_tiempo(),1000)
+        else document.getElementById("vencido").click()
+    }
+    
+</script>

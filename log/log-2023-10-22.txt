@@ -1,0 +1,197 @@
+[2023-10-22][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123'
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 9 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 24 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 24, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 24 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 24, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 10 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 27 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 27, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 6 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 18 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 18, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 9 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 18 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 43 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 43, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 44 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 44, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 12 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 30 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 30, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 9 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 12 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 30 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 30, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 22 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 51 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 51, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 7 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 18 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 42 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 42, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 21 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 48 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 48, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 20 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 20 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 47 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 47, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 7 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 8 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 22 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 22, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 13 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 33 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 33, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 3 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 6 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 6, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 20 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 46 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 46, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 14 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123'
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 45 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 45, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 22 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 12 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 30 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 30, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 9 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 24 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 24, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 3 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 6 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 6, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 7 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 20 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 20, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 16 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 39 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 39, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 17 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 41 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 41, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 45 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 45, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 15 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 36 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 36, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 21 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-22][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 11 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 29 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 29, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 1 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 4 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 9 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 9, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 13 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 32 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 32, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 10 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 19 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 45 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 45, 0, 1)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 11 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 10 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 26 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 26, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 3 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 7 AND es_correcta = 1
+[2023-10-22][INFO]Ejecutando query: INSERT IGNORE INTO `respuestas_usuario` (`id_usuario`, `id_respuesta`, `es_correcta`, `es_incorrecta`)
+                VALUES (16, 7, 1, 0)
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-22][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 12 ORDER BY RAND();
+[2023-10-22][INFO]Ejecutando query: SELECT u.*,s.descripcion FROM `usuarios` as u JOIN sexo as s ON u.sexo=s.id WHERE u.id = 16 

@@ -1,0 +1,157 @@
+
+<div class="container mt-2 pt-2">
+{{#usuario}}
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card" style="background-color:black">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="../public/uploads/{{foto}}" class="w-100">
+                        </div>
+                        <div class="col-md-6">
+                         <div class="card-details">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">{{nombre}} {{apellido}}</h5>
+                                <a href="/usuario/editar_perfil" id="edit" class="edit-icon"><i class="bi bi-pencil-square" ></i></a>
+                            </div>
+                            <hr class="divider">
+                                <p class="card-text " id="userName" data-nombre="{{nombreUsuario}}">Nombre de usuario: {{nombreUsuario}}</p>
+                                <p class="card-text">País: {{pais}}</p>
+                                <p class="card-text" id="ciudades" data-ciudad="{{ciudad}}">Ciudad: {{ciudad}}</p>
+                                <p class="card-text">Email: {{email}}</p>
+                                <p class="card-text">Sexo: {{descripcion}}</p>
+                            <div class="row">
+                        </div>
+                        </div>
+                            <div id="map" style="height: 250px; width: 100%;"></div>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#qrModal">
+                                    Mostrar QR del Perfil
+                    </button>
+
+                    <div class="modal fade" id="qrModal" tabindex="-1" role="dialog" aria-labelledby="qrModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="qrModalLabel">QR del Perfil</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="card" style="background-color: rgba(255,255,255, 0.6)">
+                                            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                                <div id="qrcode"></div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/usuario}}
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO-cs-AzjPpidbANQOQr9bWXK1mw0I9Ww"></script>
+
+<script>
+    // Obtén el nombre de la ciudad
+    var ciudadElement = document.getElementById('ciudades');
+    var ciudad = ciudadElement.dataset.ciudad; // Utiliza "ciudad" en lugar de "ciudades"
+
+    // Llama a la función para inicializar el mapa
+    initMap(ciudad);
+
+    function initMap(ciudad) {
+        // Crea un objeto Geocoder para convertir la dirección en coordenadas
+        var geocoder = new google.maps.Geocoder();
+
+        // Inicializa el mapa
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: { lat: 0, lng: 0 } // Centra el mapa en una posición inicial
+        });
+
+        // Convierte la dirección en coordenadas
+        geocoder.geocode({ 'address': ciudad }, function (results, status) {
+            if (status === 'OK') {
+                // Mueve el centro del mapa a la ubicación del usuario
+                map.setCenter(results[0].geometry.location);
+
+                // Agrega un marcador en la ubicación del usuario
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: results[0].geometry.location
+                });
+            } else {
+                console.error('Geocode was not successful for the following reason: ' + status);
+            }
+        });
+    }
+</script>
+
+<script>
+    // ...
+
+    // Agrega un evento de clic al botón
+    document.getElementById('mostrarQRBtn').addEventListener('click', function () {
+        // Genera el QR en el contenedor del modal
+        generateQRCode(userProfileUrl, document.getElementById('qrcodeModal'));
+    });
+
+    // ...
+</script>
+
+
+<script>
+    const currentURL = window.location.href;
+
+    if (currentURL === 'http://127.0.0.1/usuario/perfil') {
+        document.getElementById('edit').style.display = 'inline';
+    } else {
+        document.getElementById('edit').style.display = 'none';
+    }
+
+    // Agrega un evento de clic al botón
+    document.getElementById('mostrarQRBtn').addEventListener('click', function () {
+        var qrCodeDiv = document.getElementById('qrcode');
+        
+        // Si el div del QR está visible, ocúltalo; de lo contrario, muéstralo
+        if (qrCodeDiv.style.display === 'none' || qrCodeDiv.style.display === '') {
+            qrCodeDiv.style.display = 'block';
+        } else {
+            qrCodeDiv.style.display = 'none';
+        }
+    });
+</script>
+
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+<script>
+    var userNameElement = document.getElementById('userName');
+    var userName = userNameElement.dataset.nombre; // Utiliza "nombre" en lugar de "userName"
+    
+    function generateQRCode(url) {
+      var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: url,
+        width: 128,
+        height: 128,
+      });
+    }
+    var userProfileUrl = "http://127.0.0.1/usuario/perfil?userName=" + userName;
+
+    // Call the function to generate the QR code
+    generateQRCode(userProfileUrl);
+</script>
+

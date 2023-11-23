@@ -1,0 +1,30 @@
+[2023-11-07][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-07][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-07][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 21 ORDER BY id DESC LIMIT 1
+[2023-11-07][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 21 ORDER BY id DESC LIMIT 1
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 5 ORDER BY RAND();
+[2023-11-07][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 10 AND es_correcta = 1
+[2023-11-07][INFO]Ejecutando query: INSERT INTO useranswers(userId, respuestaId, partidaId, estado ) VALUES (18,10,21,1)
+[2023-11-07][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-07][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 21 ORDER BY id DESC LIMIT 1
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 15 ORDER BY RAND();
+[2023-11-07][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 15 ORDER BY RAND() LIMIT 1;
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 36 AND es_correcta = 1
+[2023-11-07][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-07][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 21 ORDER BY id DESC LIMIT 1
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 21 ORDER BY RAND();
+[2023-11-07][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 48 AND es_correcta = 1
+[2023-11-07][INFO]Ejecutando query: INSERT INTO useranswers(userId, respuestaId, partidaId, estado ) VALUES (18,48,21,1)
+[2023-11-07][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-07][INFO]Ejecutando query: SELECT id, vidas, vidasBot, estado FROM partidas WHERE id LIKE 21 ORDER BY id DESC LIMIT 1
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-11-07][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 5 ORDER BY RAND();
+[2023-11-07][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-07][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10
+[2023-11-07][INFO]Ejecutando query: SELECT u.nombreusuario as userName, COUNT(ua.id) as total, SUM(ua.estado) as correctas FROM useranswers as ua JOIN usuarios as u on u.id=ua.userId GROUP BY userName ORDER BY correctas DESC LIMIT 10

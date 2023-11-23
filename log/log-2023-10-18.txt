@@ -1,0 +1,27 @@
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'poketest@mail.com' AND password LIKE '12345'
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123'
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 8 ORDER BY RAND();
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 23 AND es_correcta = 1
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 23 ORDER BY RAND();
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 52 AND es_correcta = 1
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 20 ORDER BY RAND();
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 46 AND es_correcta = 1
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 10 ORDER BY RAND();
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE '' AND password LIKE ''
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM usuarios WHERE email LIKE 'chester9322@gmail.com' AND password LIKE '123'
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 9 ORDER BY RAND();
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 24 AND es_correcta = 1
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 10 ORDER BY RAND();
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM respuestas WHERE id = 27 AND es_correcta = 1
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `preguntas` WHERE `estado` = 'ACTIVA' ORDER BY RAND() LIMIT 1;
+[2023-10-18][INFO]Ejecutando query: SELECT * FROM `respuestas` WHERE  id_pregunta = 11 ORDER BY RAND();

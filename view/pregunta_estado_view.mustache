@@ -1,0 +1,69 @@
+<div class="container mt-5 pt-5 mb-5 pb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">{{titulo}}</div>
+        <div class="card-body text-center">
+          <h1 class="mb-3">{{subtitulo}}</h1>
+            <a href="/pregunta/turnoBot" id="continuar_button">
+              <button class="btn {{#es_correcta}}btn-primary{{/es_correcta}}{{^es_correcta}}btn-danger{{/es_correcta}}">
+                  {{boton}}
+              </button>
+            </a>
+            <button type="button" class="btn btn-danger reportar" onClick="reportar({{preguntaId}})">Reportar Pregunta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+    let tiempo = 5;
+
+    setTimeout(()=>set_tiempo(),1000)
+
+    function set_tiempo(){
+        tiempo--;
+        if(tiempo>0)setTimeout(()=>set_tiempo(),1000)
+        //else document.getElementById("continuar_button").click()
+    }
+    
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+
+  function reportar(preguntaId){
+    const apiUrl = `http://127.0.0.1/pregunta/reportar?preguntaId=${preguntaId}`;
+
+    axios.get(apiUrl)
+      .then(response => {
+        if(response.data.status == "success"){
+          Swal.fire({
+            title: "Pregunta Reportada Correctamente",
+            icon: "success",
+            showDenyButton: false,
+            showCancelButton: false,
+            confirmButtonText: "Ok",
+          }).then((result) => {
+            document.getElementById("continuar_button").click()
+          });
+        }else{
+          Swal.fire({
+            title: "Error al Reportar Preguta",
+            icon: "error",
+            showDenyButton: false,
+            showCancelButton: false,
+            confirmButtonText: "Ok",
+          })
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }
+
+</script>
